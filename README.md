@@ -11,7 +11,7 @@ Unsupervised learning is a type of algorithm that learns patterns from untagged 
 
 Using the following code, to map the elbow curve: 
 
-``
+````
 inertia = []
 k = list(range(1, 11))
 
@@ -24,7 +24,7 @@ for i in k:
 elbow_data = {'k' : k, 'inertia' : inertia}
 elbow_df = pd.DataFrame(elbow_data)
 elbow_df.hvplot.line(x='k', y='inertia', title='Elbow Curve', xticks=k)
-``
+````
 
 ![Elbow Curve](/Resource/Elbow_Curve.png)
 ![K Means](/Resource/K_Means.png)
